@@ -23,7 +23,7 @@ Installing the plugin
 Configuring the plugin
 ----------------------
 
-1. Inside Lazarus go to `Tools` -> `Configure Code::Stats`.
+1. Inside Lazarus go to `Tools` → `Configure Code::Stats`.
 2. Check `Enable Code::Stats` option.
 3. Inform your [API token](https://codestats.net/my/machines).
 4. Click `OK`.
