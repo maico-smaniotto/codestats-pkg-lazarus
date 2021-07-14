@@ -4,6 +4,7 @@
     <PathDelim Value="\"/>
     <Name Value="CodeStats"/>
     <Type Value="RunAndDesignTime"/>
+    <Author Value="Maico Smaniotto"/>
     <CompilerOptions>
       <Version Value="11"/>
       <PathDelim Value="\"/>
@@ -11,6 +12,10 @@
         <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
+    <Description Value="Lazarus IDE plugin for Code::Stats service. Collects your programming experience (XP) and sends to codestats.net.
+
+This plugin works by listening to the editor's text changes and periodically sending the amounts of XP to Code::Stats. The programming language is detected by the file extension. Note that at no point is any of your code sent to Code::Stats. Only the amounts of XP (roughly the amount of keystrokes) are sent."/>
+    <License Value="LGPL v2.1"/>
     <Files Count="4">
       <Item1>
         <Filename Value="uCodeStatsPlugin.pas"/>
