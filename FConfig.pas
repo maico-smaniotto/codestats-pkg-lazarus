@@ -20,7 +20,7 @@ unit FConfig;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Windows;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls;
 
 type
   TFormConfig = class(TForm)
@@ -33,6 +33,7 @@ type
     EdApiToken: TEdit;
     EdApiUrl: TEdit;
     CkShowMessages: TCheckBox;
+    PanelEnable: TPanel;
     procedure CkEnableClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure BtOKClick(Sender: TObject);
@@ -55,6 +56,9 @@ end;
 
 procedure TFormConfig.FormShow(Sender: TObject);
 begin
+  PanelEnable.Height := CkEnable.Height;
+  PanelEnable.Width  := CkEnable.Width + 4;
+
   CkEnableClick(CkEnable);
 end;
 
@@ -64,13 +68,13 @@ begin
   begin
     if EdApiToken.Text = '' then
     begin
-      Application.MessageBox('Error', 'API token must be informed.', MB_ICONERROR + MB_OK);
+      Application.MessageBox('Error', 'API token must be informed.', {MB_ICONERROR}$10 + {MB_OK}0);
       EdApiToken.SetFocus;
       Exit;
     end;
     if EdApiUrl.Text = '' then
     begin
-      Application.MessageBox('Error', 'API URL must be informed.', MB_ICONERROR + MB_OK);
+      Application.MessageBox('Error', 'API URL must be informed.', {MB_ICONERROR}$10 + {MB_OK}0);
       EdApiUrl.SetFocus;
       Exit;
     end;
