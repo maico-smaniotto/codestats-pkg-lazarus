@@ -23,11 +23,12 @@ Using IDE's Online Package Manager:
 6. Configure (see [Configuring the plugin](#configuring-the-plugin)).
 
 Installing manually:
-1. Open the package file `CodeStats.lpk` in Lazarus IDE (`Package` → `Open package`).
-2. Click the `Compile` button.
-3. Click `Use` → `Install`.
-4. Confirm rebuild Lazarus and wait until IDE restarts.
-5. Configure (see below).
+1. Clone or download this repository.
+2. Open the package file `CodeStats.lpk` in Lazarus IDE (`Package` → `Open package`).
+3. Click the `Compile` button.
+4. Click `Use` → `Install`.
+5. Confirm rebuild Lazarus and wait until IDE restarts.
+6. Configure (see below).
 
 Configuring the plugin
 ----------------------
