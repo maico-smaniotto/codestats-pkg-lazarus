@@ -1,4 +1,4 @@
-# CodeStats Package
+# CodeStats Package for Lazarus IDE
 Lazarus IDE plugin for Code::Stats service. Collects your programming experience (XP) and sends to codestats.net.
 
 What is Code::Stats?
@@ -14,11 +14,20 @@ This plugin works by listening to the editor's text changes and periodically sen
 Installing the plugin
 ---------------------
 
+Using IDE's Online Package Manager:
+1. Under Lazarus IDE, go to `Package` → `Online Package Manager` (Ctrl + Alt + O).
+2. Search for `CodeStats`.
+3. Check the package for installation.
+4. Click `Install` → `From repository` and wait for the download.
+5. Confirm rebuild Lazarus and wait until IDE restarts.
+6. Configure (see [Configuring the plugin](#configuring-the-plugin)).
+
+Installing manually:
 1. Open the package file `CodeStats.lpk` in Lazarus IDE (`Package` → `Open package`).
 2. Click the `Compile` button.
 3. Click `Use` → `Install`.
-4. Confirm rebuild Lazarus.
-5. Configure (see below)
+4. Confirm rebuild Lazarus and wait until IDE restarts.
+5. Configure (see below).
 
 Configuring the plugin
 ----------------------
